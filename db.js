@@ -139,6 +139,12 @@ const seedCategories = [
     ["Mukirii", ""],
     ["Bin_kahindi", ""],
     ["Cyntia Masharia", ""]
+    ["Deey", ""]
+    ["Mohamed Abbas", ""]
+    ["Frank nzonzo", ""]
+    ["mr fresher 2026", ""]
+    ["miss fresher 2026", ""]
+    ["Rahma", ""]
   ]},
 ];
 
