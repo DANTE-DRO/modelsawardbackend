@@ -138,7 +138,12 @@ const seedCategories = [
     ["Nashahdaphey", ""],
     ["Mukirii", ""],
     ["Bin_kahindi", ""],
-    ["Cyntia Masharia", ""]
+    ["Cyntia Masharia", ""],
+    ["Frank Nzonzo", ""],
+    ["Mohamed Abbas", ""],
+    ["Deey", ""],
+    ["Mr Fresher 2026", ""],
+    ["Miss Fresher 2026", ""]
   ]},
 ];
 
@@ -200,7 +205,7 @@ if (catCount === 0) {
 
 // ============================================================
 //  Catalogue healer — guarantees the Best Models in Chuka University
-//  category ALWAYS contains exactly the 11 official nominees,
+//  category ALWAYS contains exactly the 16 official nominees,
 //  with stable deterministic ids, exact spelling, and every
 //  historical vote / transaction / floor carried over.
 //  Runs on every boot and after every Neon restore/reconcile,
@@ -220,6 +225,11 @@ const CANONICAL_ROSTER = [
   { name: "Mukirii", aliases: [] },
   { name: "Bin_kahindi", aliases: [] },
   { name: "Cyntia Masharia", aliases: [] },
+  { name: "Frank Nzonzo", aliases: [] },
+  { name: "Mohamed Abbas", aliases: [] },
+  { name: "Deey", aliases: [] },
+  { name: "Mr Fresher 2026", aliases: [] },
+  { name: "Miss Fresher 2026", aliases: [] },
 ];
 
 function canonicaliseCatalogue() {
@@ -293,7 +303,7 @@ function canonicaliseCatalogue() {
       db.prepare('DELETE FROM vote_baseline WHERE nominee_id NOT IN (SELECT id FROM nominees)').run();
     });
     tx();
-    if (changed) console.log('[db] Catalogue canonicalised — exact 11-nominee roster enforced.');
+    if (changed) console.log('[db] Catalogue canonicalised — exact 16-nominee roster enforced.');
     return changed;
   } catch (e) {
     console.error('[db] canonicaliseCatalogue error:', e.message);
