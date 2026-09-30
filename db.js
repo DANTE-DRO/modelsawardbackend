@@ -139,12 +139,6 @@ const seedCategories = [
     ["Mukirii", ""],
     ["Bin_kahindi", ""],
     ["Cyntia Masharia", ""]
-    ["Deey", ""]
-    ["Mohamed Abbas", ""]
-    ["Frank nzonzo", ""]
-    ["mr fresher 2026", ""]
-    ["miss fresher 2026", ""]
-    ["Rahma", ""]
   ]},
 ];
 
@@ -226,12 +220,6 @@ const CANONICAL_ROSTER = [
   { name: "Mukirii", aliases: [] },
   { name: "Bin_kahindi", aliases: [] },
   { name: "Cyntia Masharia", aliases: [] },
-  { name: "Deey", aliases: [] },
-  { name: "Mohamed Abbas", aliases: [] },
-  { name: "Frank nzonzo", aliases: [] },
-  { name: "mr fresher 2026", aliases: [] },
-  { name: "miss fresher 2026", aliases: [] },
-  { name: "Rahma", aliases: [] },
 ];
 
 function canonicaliseCatalogue() {
